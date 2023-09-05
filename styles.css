@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    background-color: #526D82;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 200px 0 80px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+/*
+
+NAVIGATION
+
+*/
+
+nav {
+    background-color: #27374D;
+}
+
+.nav__title {
+    color: white;
+}
+
+.nav__links-list, .nav__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__links-list {
+    margin-top: 40px;
+}
+
+.nav__link {
+    margin-right: 12px;
+}
+
+.nav__link--anchor {
+    color: white;
+}
+
+/*
+
+CHARACTERS
+
+*/
+
+.characters__half {
+    display: flex;
+    justify-content: center;
+}
+
+.characters__list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.character {
+    border: 1px solid black;
+    padding: 16px 40px;
+}
+
+.character:hover {
+    background-color: #27374D;
+}
+
+
+
