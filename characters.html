@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Characters</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2cd2c3670a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
@@ -20,7 +21,7 @@
               <a href="characters.html" class="nav__link--anchor">Characters</a>
             </li>
             <li class="nav__link">
-              <a href="#" class="nav__link--anchor">Home</a>
+              <a href="#" class="nav__link--anchor">Houses</a>
             </li>
           </ul>
         </div>
@@ -29,23 +30,38 @@
 
     <section id="characters-page">
       <div class="characters__half row">
+        <div class="characters__first-half">
+
+        
+        <h1>Character List:</h1>
         <div class="characters__list row">
-          <h1>Character List:</h1>
           <div class="character" onclick="onClickChange(event)">
-            <p class="character__para">Name: Jon Snow</p>
+            <p class="character__para">Name: Jon Snow </p>
+            <img class="character__img" src="https://thronesapi.com/assets/images/daenerys.jpg">
           </div>
         </div>
+        <div class="character__list--pagination">
+          <button class="character__list--pagination-btn click" onclick="changePage(-1)"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="character__list--pagination-btn click" onclick="changePage(1)"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
         <div class="characters__second-half">
+          <div class="characters__second-half--wrapper">
+
+          
           <h1>Character Details</h1>
           <div class="character__detail">
-
-            <p class="character__first--name">ID: 3</p>
+            <img class="characters__second-half--img" src="https://thronesapi.com/assets/images/daenerys.jpg">
             <p class="character__first--name">First Name: Jon</p>
             <p class="character__last--name">Last Name: Snow</p>
             <p class="character__family">Full Name: Jon Snow</p>
+            <p class="character__family">Title: Jon Snow</p>
+            <p class="character__family">Family: Name: Jon Snow</p>
           </div>
         </div>
+      </div>
     </div>
 </section>
+
   </body>
 </html>
