@@ -168,5 +168,29 @@ CHARACTERS
     padding: 16px;
 }
 
+/*
+
+HOUSES
+
+*/
+
+.houses__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.house {
+    width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    transition: all 300ms ease;
+}
+
+.house:hover {
+    scale: 1.05;
+    opacity: 0.9;
+}
 
 
